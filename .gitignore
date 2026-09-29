@@ -1,0 +1,20 @@
+.lake/
+.DS_Store
+__pycache__/
+*.pyc
+build/
+literal_check
+downloads/
+generated/
+words/11/*.txt
+words/12/*.txt
+words/13/*.txt
+
+# Document build intermediates
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.partial

@@ -1,0 +1,23 @@
+name = "superpermutation_upper_bound"
+version = "0.1.0"
+defaultTargets = ["Solution", "AxiomCheck"]
+
+[[lean_lib]]
+name = "SuperpermutationUpperBound"
+
+[[lean_lib]]
+name = "SuperpermutationUpperBound43"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "AxiomCheck"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"

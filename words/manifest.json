@@ -1,0 +1,77 @@
+{
+  "format": "ASCII symbols, one final LF; length and word_sha256 exclude LF",
+  "words": [
+    {
+      "n": 8,
+      "path": "words/8/superpermutation-8-46181.txt",
+      "length": 46181,
+      "alphabet": "01234567",
+      "sha256": "07637d5518101667132847e74add605e9809961d5793342321cb70c3c599c62b",
+      "word_sha256": "33c8e75d5c2eb8d579bf0d9290ce750f5e6cacad629decc575688a946b8238c9",
+      "expected_permutations": 40320,
+      "extra_permutation_occurrences": 96
+    },
+    {
+      "n": 9,
+      "path": "words/9/superpermutation-9-408736.txt",
+      "length": 408736,
+      "alphabet": "012345678",
+      "sha256": "b8b6298a2fa06e626ef189a75661a76abf257a5124d1808f16c041897b55b33f",
+      "word_sha256": "dfa879fbc3b1ad82c99127f38830df7ca91a5db2929f8d2d7d98602570c1d942",
+      "expected_permutations": 362880,
+      "extra_permutation_occurrences": 336
+    },
+    {
+      "n": 10,
+      "path": "words/10/superpermutation-10-4034894.txt",
+      "length": 4034894,
+      "alphabet": "0123456789",
+      "sha256": "73d940fdc95555fc58fa004a24a355909dbcd496b7d9d17dbcf4b596731dfcb4",
+      "word_sha256": "49714586a7a924666ca6dead874f37126b16fb0c161d4ecaec4dbc5d3699d290",
+      "expected_permutations": 3628800,
+      "extra_permutation_occurrences": 2351
+    },
+    {
+      "n": 11,
+      "path": "words/11/superpermutation-11-43930689.txt",
+      "length": 43930689,
+      "alphabet": "0123456789A",
+      "sha256": "7e3e9e897c2dfe0884d68b9602f2f2a2a7b1477d4476e78dd80ac42989a50eaf",
+      "word_sha256": "954a7829b0e4984d7d3312800f3c68789a6fa8ac70d6ce08b62b722b744b740b",
+      "expected_permutations": 39916800,
+      "extra_permutation_occurrences": 18816,
+      "compressed_filename": "superpermutation-11-43930689.txt.xz",
+      "compressed_path": "words/11/superpermutation-11-43930689.txt.xz",
+      "compressed_bytes": 319848,
+      "compressed_sha256": "85f869324664759c4daeaf70774841dcff56fbe1ae6c8b5eb340983642fdfb51"
+    },
+    {
+      "n": 12,
+      "path": "words/12/superpermutation-12-522752900.txt",
+      "length": 522752900,
+      "alphabet": "0123456789AB",
+      "sha256": "ca4dbbda4a2ec386b9bf974eeb3f25c4d5622093fbf2d8a82fe39a5ee3a7917a",
+      "word_sha256": "526214a538965001fd8d0d89e6adcfc3694fc76c38246e12035afb170ea831b3",
+      "expected_permutations": 479001600,
+      "extra_permutation_occurrences": 169344,
+      "compressed_filename": "superpermutation-12-522752900.txt.xz",
+      "compressed_path": "words/12/superpermutation-12-522752900.txt.xz",
+      "compressed_bytes": 3552156,
+      "compressed_sha256": "c7b1eee3c064e28fff44d762a0dab4307e1b974df3dd7c76ca03f1f23465bc5f"
+    },
+    {
+      "n": 13,
+      "path": "words/13/superpermutation-13-6747987126.txt",
+      "length": 6747987126,
+      "alphabet": "0123456789ABC",
+      "sha256": "412842b831273382e3904c6bdf4d93ca412574869ebe5cfc601be7d515b3f282",
+      "word_sha256": "7062acec51b8864c339471ac7c4cff4e9a860f0625d8413b2a4659d22f85eac2",
+      "expected_permutations": 6227020800,
+      "extra_permutation_occurrences": 1693440,
+      "compressed_filename": "superpermutation-13-6747987126.txt.xz",
+      "compressed_path": "words/13/superpermutation-13-6747987126.txt.xz",
+      "compressed_bytes": 38942764,
+      "compressed_sha256": "1cac45065ba0d5a590eb25ba86f915a40834ff6c9f4f2f05ed9b7a8d22a6516c"
+    }
+  ]
+}
