@@ -9,6 +9,8 @@ K!+(K-1)!+(K-2)!+\left(\frac{43}{80}+o(1)\right)(K-3)!,
 $$
 
 together with explicit superpermutations on 8 through 13 symbols.
+[docs/upper-bound-explained.pdf](docs/upper-bound-explained.pdf) is a brief
+summary of the construction and of the known bounds.
 
 ## Results
 
@@ -32,9 +34,9 @@ $$
 
 For a given `K ≥ 11`, set `m = K - 2`, try every `a`, and take the floor
 of the smallest value; `python3 tools/finite_bound.py` does this. Both
-statements have complete Lean proofs, which have been independently
-audited. The sharper error term `O(log K / (K log log K))` in the coefficient
-has an [ordinary proof](docs/upper-error-term.md) and is not formalized.
+statements have complete Lean proofs. The sharper error term
+`O(log K / (K log log K))` in the coefficient has an
+[ordinary proof](docs/upper-error-term.md) and is not formalized.
 
 The library also proves the earlier uniform bounds
 $F_3(K)+\frac35(K-3)!$ for `K ≥ 10` and $F_3(K)+\frac{101}{120}(K-3)!$ for
@@ -139,10 +141,11 @@ The rebuilt words are checked against the hashes in the manifest. At thirteen
 symbols the constructor needs about 13.5 GB of disk space. The input data is
 in `tools/construction-input.txt` and `tools/recipes/`.
 
-## Credits
+## AI disclosure
 
-This project made heavy use of AI models, for the computer searches, for
-parts of the construction, and for writing and auditing the Lean proofs.
+This project made heavy use of AI models (largely OpenAI's ChatGPT 6 Astra
+and Anthropic's Claude Opus 5.5) for research, formalization, and drafting
+this repository's documentation.
 
 ## License
 
