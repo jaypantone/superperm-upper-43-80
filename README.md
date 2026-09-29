@@ -51,7 +51,7 @@ exactly what is formalized.
 | 10 | 4,037,047 | 4,037,046 | 4,035,009 | [4,034,894](words/10/superpermutation-10-4034894.txt) |
 | 11 | 43,948,808 | 43,948,807 | 43,932,117 | [43,930,689](words/11/superpermutation-11-43930689.txt.xz) (XZ) |
 | 12 | 522,910,089 | 522,910,088 | 522,759,498 | [522,748,520](words/12/superpermutation-12-522748520.txt.xz) (XZ), see below |
-| 13 | 6,749,568,010 | 6,749,568,009 | 6,748,047,864 | [6,747,987,126](words/13/superpermutation-13-6747987126.txt.xz) (XZ) |
+| 13 | 6,749,568,010 | 6,749,568,009 | 6,748,047,864 | [6,747,967,798](words/13/superpermutation-13-6747967798.txt.xz) (XZ), see below |
 
 The eight-symbol word is exactly the construction. For 9 through 13 symbols,
 the cuts and order of the pieces were then optimized by computer search.
@@ -63,18 +63,19 @@ that is not counted in the length. The files marked XZ are compressed with
 44 MB, 523 MB and 6.7 GB; `xz -dk FILE` restores the text file.
 [words/manifest.json](words/manifest.json) records the lengths and hashes.
 
-The twelve-symbol word of length 522,748,520 comes from a tighter
-construction. The ten-symbol base is transported once, to eleven symbols,
-and its connector cycles are then chosen again at twelve symbols: 2,843
-cycles instead of the 2,856 obtained by transporting the cycles chosen at
-eleven symbols. The same argument then gives the coefficient
-21659/40320 = 0.53718 in place of 43/80 = 0.5375, which is checked by
-computer but not proved in Lean. The word was assembled by
-`tools/construct.cpp`, changed only to read an eleven-symbol base, with its
-default piece order and no further optimization. The earlier twelve-symbol
-word, of length 522,752,900, is kept because
-`tools/generate_large_words.py` rebuilds it from the data in this
-repository.
+The words of lengths 522,748,520 and 6,747,967,798 on 12 and 13 symbols
+come from a tighter construction. The ten-symbol base is transported once
+(for 12 symbols) or twice (for 13), and its connector cycles are then chosen
+again at that size. This needs 2,843 cycles at 12 symbols and 25,584 at 13,
+compared with 2,856 and 25,704 obtained by transporting the cycles chosen at
+eleven symbols. The same argument then gives the coefficients
+21659/40320 = 0.53718 and 4061/7560 = 0.53717 in place of 43/80 = 0.5375;
+these are checked by computer but not proved in Lean. Both words were
+assembled by `tools/construct.cpp`, changed only to read an eleven- or
+twelve-symbol base, with its default piece order and no further
+optimization. The earlier words of lengths 522,752,900 and 6,747,987,126 are
+kept because `tools/generate_large_words.py` rebuilds them from the data in
+this repository.
 
 ## Check the Lean proofs
 
