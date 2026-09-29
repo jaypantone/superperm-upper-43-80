@@ -60,6 +60,21 @@
       "compressed_sha256": "c7b1eee3c064e28fff44d762a0dab4307e1b974df3dd7c76ca03f1f23465bc5f"
     },
     {
+      "n": 12,
+      "path": "words/12/superpermutation-12-522748520.txt",
+      "length": 522748520,
+      "alphabet": "0123456789AB",
+      "sha256": "cdf1c37f94ba900bf4356f0909cc2c8719fe15a2d994a5d1e5f91afb1545d049",
+      "word_sha256": "8c75080a5b589597206e9eb226a69b18a03175cb6d907702b41edee5e79606e1",
+      "expected_permutations": 479001600,
+      "extra_permutation_occurrences": 169344,
+      "compressed_filename": "superpermutation-12-522748520.txt.xz",
+      "compressed_path": "words/12/superpermutation-12-522748520.txt.xz",
+      "compressed_bytes": 3430916,
+      "compressed_sha256": "07d3aca4833e877331bbd7f404ff419899e0af4e9409b3ba138ebe3b045f2231",
+      "construction": "tighter construction: the ten-symbol base transported once, with its connector cycles chosen again at twelve symbols (2,843 cycles instead of the 2,856 transported ones); default piece order"
+    },
+    {
       "n": 13,
       "path": "words/13/superpermutation-13-6747987126.txt",
       "length": 6747987126,

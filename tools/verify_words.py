@@ -80,7 +80,9 @@ def main():
                         help="use an already compiled literal_check executable")
     args = parser.parse_args()
     rows = json.loads((ROOT / "words/manifest.json").read_text())["words"]
-    by_degree = {row["n"]: row for row in rows}
+    by_degree = {}
+    for row in rows:
+        by_degree.setdefault(row["n"], []).append(row)
     require(all(n in by_degree for n in args.degrees),
             "Requested degree has no word in the manifest")
     with tempfile.TemporaryDirectory(prefix="superpermutation-check-") as temporary:
@@ -91,8 +93,7 @@ def main():
                             str(ROOT / "tools/literal_check.cpp"), "-o", str(checker)],
                            check=True)
         subprocess.run([str(checker), "--self-test"], check=True)
-        for n in sorted(set(args.degrees)):
-            row = by_degree[n]
+        for row in (row for n in sorted(set(args.degrees)) for row in by_degree[n]):
             path = ROOT / row["path"]
             extracted = None
             if not path.is_file():
