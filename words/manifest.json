@@ -22,6 +22,17 @@
       "extra_permutation_occurrences": 336
     },
     {
+      "n": 9,
+      "path": "words/9/superpermutation-9-408732.txt",
+      "length": 408732,
+      "alphabet": "012345678",
+      "sha256": "6b5f22010b002373c6cc1db3ed4e3e9d10fe48a4cfca19568f87253c6e846a96",
+      "word_sha256": "a65f116e478d0447bf9c39c771611ba820b1f88f1ce6418969eafd4ef6b6fc78",
+      "expected_permutations": 362880,
+      "extra_permutation_occurrences": 336,
+      "construction": "Same construction as the 408,736 word; components opened at arbitrary character positions, with openings and order optimized jointly (2026-09-30)."
+    },
+    {
       "n": 10,
       "path": "words/10/superpermutation-10-4034894.txt",
       "length": 4034894,
@@ -30,6 +41,17 @@
       "word_sha256": "49714586a7a924666ca6dead874f37126b16fb0c161d4ecaec4dbc5d3699d290",
       "expected_permutations": 3628800,
       "extra_permutation_occurrences": 2351
+    },
+    {
+      "n": 10,
+      "path": "words/10/superpermutation-10-4034889.txt",
+      "length": 4034889,
+      "alphabet": "0123456789",
+      "sha256": "14c38117bf89d112579068ac3688730003fa5a56e0e4fdc466e5825f51741e12",
+      "word_sha256": "1365ff341c59e39255de4f664d2b1acf80d7ff26b809ceca94d84c9868e52d78",
+      "expected_permutations": 3628800,
+      "extra_permutation_occurrences": 2352,
+      "construction": "Same rows as the 4,034,894 word, with one connector cycle replaced by an open connector path through 28 trails; endpoints and order optimized jointly (2026-09-30)."
     },
     {
       "n": 11,
@@ -44,6 +66,21 @@
       "compressed_path": "words/11/superpermutation-11-43930689.txt.xz",
       "compressed_bytes": 319848,
       "compressed_sha256": "85f869324664759c4daeaf70774841dcff56fbe1ae6c8b5eb340983642fdfb51"
+    },
+    {
+      "n": 11,
+      "path": "words/11/superpermutation-11-43930680.txt",
+      "length": 43930680,
+      "alphabet": "0123456789A",
+      "sha256": "c8de119305a2fd646ba6294832515ff464b399a88a5fe1da9727ed07383f970a",
+      "word_sha256": "ef643afcd8cdbc1564beb9b231d5a61c387571f15e539665093f20006dd76681",
+      "expected_permutations": 39916800,
+      "extra_permutation_occurrences": 18816,
+      "compressed_filename": "superpermutation-11-43930680.txt.xz",
+      "compressed_path": "words/11/superpermutation-11-43930680.txt.xz",
+      "compressed_bytes": 417660,
+      "compressed_sha256": "611286201d91a5ec61e010ceb421f80f4b0876ea531eee9fe7f29f02791dbf6f",
+      "construction": "Same modules as the 43,930,689 word; cuts (including opening at any endpoint word) and order re-optimized (2026-09-30)."
     },
     {
       "n": 12,
@@ -75,6 +112,21 @@
       "construction": "tighter construction: the ten-symbol base transported once, with its connector cycles chosen again at twelve symbols (2,843 cycles instead of the 2,856 transported ones); default piece order"
     },
     {
+      "n": 12,
+      "path": "words/12/superpermutation-12-522745581.txt",
+      "length": 522745581,
+      "alphabet": "0123456789AB",
+      "sha256": "9331cd7686ccc855c7a02198df7c67609cde41c96f7be43249e8c8f924e3a18c",
+      "word_sha256": "c176a12fbc28a394b42f0770dc283d4b2876504f31ab1e457630ddeb6b3bd4fb",
+      "expected_permutations": 479001600,
+      "extra_permutation_occurrences": 169344,
+      "compressed_filename": "superpermutation-12-522745581.txt.xz",
+      "compressed_path": "words/12/superpermutation-12-522745581.txt.xz",
+      "compressed_bytes": 3540748,
+      "compressed_sha256": "77cf3931d0416f6eea9ca11866e574d7b5f0953e804fb31a98b5b557b231dad1",
+      "construction": "Same modules as the 522,748,520 word (tighter construction); cuts and order optimized by integer programming and local search, using that the 48 large components are relabelled copies (2026-09-30)."
+    },
+    {
       "n": 13,
       "path": "words/13/superpermutation-13-6747987126.txt",
       "length": 6747987126,
@@ -102,6 +154,21 @@
       "compressed_bytes": 36558476,
       "compressed_sha256": "58d6b83966b7593f93ba2f709839b76d5e13292b5f0c08b7a199224e448828ed",
       "construction": "tighter construction: the ten-symbol base transported twice, with its connector cycles chosen again at thirteen symbols (25,584 cycles instead of the 25,704 transported ones); default piece order"
+    },
+    {
+      "n": 13,
+      "path": "words/13/superpermutation-13-6747918066.txt",
+      "length": 6747918066,
+      "alphabet": "0123456789ABC",
+      "sha256": "406cab45500e0de8e26b96ad01a03679a15be6d788a8daced6d9528c29c4292b",
+      "word_sha256": "8c26c61770dfd398a856c309f601519f9769f7ad66977622af3bdb66122c23fd",
+      "expected_permutations": 6227020800,
+      "extra_permutation_occurrences": 1693436,
+      "compressed_filename": "superpermutation-13-6747918066.txt.xz",
+      "compressed_path": "words/13/superpermutation-13-6747918066.txt.xz",
+      "compressed_bytes": 35256280,
+      "compressed_sha256": "ccf13c9eab2b1a48e580a3785c31bece1090a52c7d8c103f784cca1ff9067b04",
+      "construction": "Same modules as the 6,747,967,798 word (tighter construction); cuts and order optimized by integer programming and local search, using that the 48 large components are relabelled copies (2026-09-30)."
     }
   ]
 }
