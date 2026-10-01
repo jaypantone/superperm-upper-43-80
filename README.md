@@ -68,13 +68,13 @@ that is not counted in the length. The files marked XZ are compressed with
 The words on 9 through 13 symbols improve on the ones first posted here, which
 are kept in the same folders. They use the same constructions (for 12 and 13
 symbols, a tighter one in which the connector cycles are chosen again at that
-size); the gains come entirely from the last step, choosing where each closed
-module word is cut open and in what order the pieces are overlapped, which is now
-optimized by integer programming and local search over far more cut
-positions, exploiting at 12 and 13 symbols that the 48 large components are
-relabelled copies of one another. At 10 symbols, six connector cycles were
-also replaced by one open connector path through the 28 closed trails they
-met.
+size); the gains come entirely from the last step, choosing where each
+component word is cut open and in what order the component words are
+overlapped, which is now optimized by integer programming and local search
+over far more cut positions, exploiting at 12 and 13 symbols that the
+components fall into 48 large groups that are relabellings of one another. At
+10 symbols, six connector cycles were also replaced by one open connector path
+through the 28 closed trails they met.
 
 Choosing the connector cycles at 12 and 13 symbols gives the coefficients
 21659/40320 = 0.53718 and 4061/7560 = 0.53717 in place of 43/80 = 0.5375;
