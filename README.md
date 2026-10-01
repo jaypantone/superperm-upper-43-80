@@ -49,11 +49,11 @@ exactly what is formalized.
 | Symbols | Egan | Egan − 1 | Proved in Lean | Word in this repository |
 |---:|---:|---:|---:|---|
 | 8 | 46,205 | 46,204 | 46,181 | [46,181](words/8/superpermutation-8-46181.txt) |
-| 9 | 408,966 | 408,965 | 408,743 | [408,736](words/9/superpermutation-9-408736.txt) |
-| 10 | 4,037,047 | 4,037,046 | 4,035,009 | [4,034,894](words/10/superpermutation-10-4034894.txt) |
-| 11 | 43,948,808 | 43,948,807 | 43,932,117 | [43,930,689](words/11/superpermutation-11-43930689.txt.xz) (XZ) |
-| 12 | 522,910,089 | 522,910,088 | 522,759,498 | [522,748,520](words/12/superpermutation-12-522748520.txt.xz) (XZ), see below |
-| 13 | 6,749,568,010 | 6,749,568,009 | 6,748,047,864 | [6,747,967,798](words/13/superpermutation-13-6747967798.txt.xz) (XZ), see below |
+| 9 | 408,966 | 408,965 | 408,743 | [408,732](words/9/superpermutation-9-408732.txt) |
+| 10 | 4,037,047 | 4,037,046 | 4,035,009 | [4,034,889](words/10/superpermutation-10-4034889.txt) |
+| 11 | 43,948,808 | 43,948,807 | 43,932,117 | [43,930,680](words/11/superpermutation-11-43930680.txt.xz) (XZ) |
+| 12 | 522,910,089 | 522,910,088 | 522,759,498 | [522,745,581](words/12/superpermutation-12-522745581.txt.xz) (XZ) |
+| 13 | 6,749,568,010 | 6,749,568,009 | 6,748,047,864 | [6,747,918,066](words/13/superpermutation-13-6747918066.txt.xz) (XZ) |
 
 The eight-symbol word is exactly the construction. For 9 through 13 symbols,
 the cuts and order of the pieces were then optimized by computer search.
@@ -65,19 +65,22 @@ that is not counted in the length. The files marked XZ are compressed with
 44 MB, 523 MB and 6.7 GB; `xz -dk FILE` restores the text file.
 [words/manifest.json](words/manifest.json) records the lengths and hashes.
 
-The words of lengths 522,748,520 and 6,747,967,798 on 12 and 13 symbols
-come from a tighter construction. The ten-symbol base is transported once
-(for 12 symbols) or twice (for 13), and its connector cycles are then chosen
-again at that size. This needs 2,843 cycles at 12 symbols and 25,584 at 13,
-compared with 2,856 and 25,704 obtained by transporting the cycles chosen at
-eleven symbols. The same argument then gives the coefficients
+The words on 9 through 13 symbols improve on the ones first posted here, which
+are kept in the same folders. They use the same constructions (for 12 and 13
+symbols, a tighter one in which the connector cycles are chosen again at that
+size); the gains come entirely from the last step, choosing where each closed
+module word is cut open and in what order the pieces are overlapped, which is now
+optimized by integer programming and local search over far more cut
+positions, exploiting at 12 and 13 symbols that the 48 large components are
+relabelled copies of one another. At 10 symbols, six connector cycles were
+also replaced by one open connector path through the 28 closed trails they
+met.
+
+Choosing the connector cycles at 12 and 13 symbols gives the coefficients
 21659/40320 = 0.53718 and 4061/7560 = 0.53717 in place of 43/80 = 0.5375;
-these are checked by computer but not proved in Lean. Both words were
-assembled by `tools/construct.cpp`, changed only to read an eleven- or
-twelve-symbol base, with its default piece order and no further
-optimization. The earlier words of lengths 522,752,900 and 6,747,987,126 are
-kept because `tools/generate_large_words.py` rebuilds them from the data in
-this repository.
+these are checked by computer but not proved in Lean.
+`tools/generate_large_words.py` rebuilds the older words of lengths
+522,752,900 and 6,747,987,126 on 12 and 13 symbols.
 
 ## Check the Lean proofs
 
@@ -128,8 +131,9 @@ c++ -O3 -std=c++17 tools/literal_check.cpp -o literal_check
 
 ## Reconstruct the largest words
 
-The twelve- and thirteen-symbol words can be rebuilt without any solver from
-the ten-symbol starting data and saved component orders:
+The older twelve- and thirteen-symbol words, of lengths 522,752,900 and
+6,747,987,126, can be rebuilt without any solver from the ten-symbol starting
+data and saved component orders:
 
 ```sh
 python3 tools/generate_large_words.py 12 --output-dir generated
