@@ -83,6 +83,21 @@
       "construction": "Same modules as the 43,930,689 word; cuts (including opening at any endpoint word) and order re-optimized (2026-09-30)."
     },
     {
+      "n": 11,
+      "path": "words/11/superpermutation-11-43930644.txt",
+      "length": 43930644,
+      "alphabet": "0123456789A",
+      "sha256": "50fbdd47da644a03145403531e9c6c00fd8caa850f31e27e3cc535d7e72009be",
+      "word_sha256": "4580b3a45a4b93a852f0d170f8be13d107acc005723236f709a2ec4623367663",
+      "expected_permutations": 39916800,
+      "extra_permutation_occurrences": 18816,
+      "compressed_filename": "superpermutation-11-43930644.txt.xz",
+      "compressed_path": "words/11/superpermutation-11-43930644.txt.xz",
+      "compressed_bytes": 374332,
+      "compressed_sha256": "90505f787cfd2d40916670654a38dd320beadcb3edfd5426bd571f8887aba728",
+      "construction": "Same modules as the 43,930,680 word; cuts and order re-optimized starting from rumstd's 43,930,668 word, with more modules cut open between two 2-cycles of a row instead of at an endpoint word, as in the 4,034,873 word on 10 symbols (2026-10-04)."
+    },
+    {
       "n": 12,
       "path": "words/12/superpermutation-12-522752900.txt",
       "length": 522752900,
