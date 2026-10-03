@@ -184,6 +184,21 @@
       "compressed_bytes": 35256280,
       "compressed_sha256": "ccf13c9eab2b1a48e580a3785c31bece1090a52c7d8c103f784cca1ff9067b04",
       "construction": "Same modules as the 6,747,967,798 word (tighter construction); cuts and order optimized by integer programming and local search, using that the 48 large components are relabelled copies (2026-09-30)."
+    },
+    {
+      "n": 13,
+      "path": "words/13/superpermutation-13-6747918058.txt",
+      "length": 6747918058,
+      "alphabet": "0123456789ABC",
+      "sha256": "fc9be56c413d125924e43241e8774c1ae922b963e7c0a65b50d16887579f381e",
+      "word_sha256": "566b45cb04752e7d27da43f58da9b6375953a0fa015385c2bdf8630d89931596",
+      "expected_permutations": 6227020800,
+      "extra_permutation_occurrences": 1693436,
+      "compressed_filename": "superpermutation-13-6747918058.txt.xz",
+      "compressed_path": "words/13/superpermutation-13-6747918058.txt.xz",
+      "compressed_bytes": 36098720,
+      "compressed_sha256": "b0e2f47ab4a2fc2a76eb7c5f6657d4fc5f9eeb123eef206396ee697adce99c1e",
+      "construction": "Same modules as the 6,747,918,066 word; order of the runs of modules and the cuts at the two ends of each run re-optimized as an asymmetric travelling salesman problem (2026-10-03)."
     }
   ]
 }
